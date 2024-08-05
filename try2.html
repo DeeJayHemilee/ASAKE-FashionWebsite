@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Change on Mouseover</title>
+<style>
+    #image {
+        width: 300px; /* Adjust as per your image size */
+        height: 200px; /* Adjust as per your image size */
+    }
+</style>
+</head>
+<body>
+
+<!-- HTML structure -->
+<img id="image" src="products/f1-3.jpg" onmouseover="changeImage()" onmouseout="resetImage()" alt="Image">
+
+<script>
+    var images = []; // Create an empty list for the image paths
+
+    // Add your image paths using a loop
+    for (var i = 1; i <= 10; i++) {
+    var imagePath = `products/f1 ${i} .jpg`; // Assuming your image names follow a pattern like "image1.jpg", "image2.jpg", etc. and are stored in the "products" folder.
+    images.push(products/f); // Add the image path to the list
+    }
+    var currentIndex = 0;
+    
+    // JavaScript function to change the image on mouseover
+
+    function changeImage() {
+        var img = document.getElementById("image");
+        currentIndex = (currentIndex + 1) % images.length;
+        img.src = images[currentIndex];
+    }
+
+    // JavaScript function to reset the image on mouseout
+
+    function resetImage() {
+        var img = document.getElementById("image");
+        img.src = images[0]; // Set it back to the first image when mouseout
+        currentIndex = 0;
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+            <!-- style links -->
+            <link rel="stylesheet" href="style.css">
+
+
+            <!-- Fontawesome link -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    </head>
+    <body>
+        <section id="header" class="header">
+        <div class="logo-container">
+        <div class="Logo">
+            <a href="#" id="Logo">
+            <img src="images/Logo.png" alt="Asake Logo" width="100%" height="80px">
+            <span>A&#768;SA&#768;KE&#769;</span>
+            </a>
+        </div>
+        </div>
+
+        <div>
+        <ul id="navbar">
+            <li><a href="#" id="close-btn"><i class="fas fa-multiply"></i></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="products.html">Products</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="brand.html">Brand</a></li>
+            <li><a href="contact.html">Contact</a></li> 
+        </ul> 
+        </div>
+        <div class="icons" id="mobile">
+            <div id="menu-btn" class="menuBtn"><i class="fas fa-bars"></i></div>
+            <div id="search-btn" class="searchBtn"><i class="fas fa-search"></i></div>
+            <div id="login-btn" class="loginBtn"><i class="fas fa-user"></i></div>
+            <div id="cart-btn" class="shopBtn"><i class="fas fa-cart-plus"></i></div>
+        </div>
+        </section>
+        <!-- Header Ends -->
+
+
+        <!-- Search Form -->
+            <div class="search-box" id="search-slide">
+            <div class="search-toggle">
+                <i class="fas fa-multiply" id="search-out"></i>
+            </div>
+            <div class="row">
+                <form class="formm">				    
+                <input type="text" name="search" placeholder="Search Products..." id="input-box">
+                <button id="search"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="result-box"></div>
+            </div>
+        <!-- Search Form -->
+    
+        <script src="script.js"></script>
+    </body>

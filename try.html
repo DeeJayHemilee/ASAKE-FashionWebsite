@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pro {
+    position: relative;
+    display: inline-block;
+  }
+
+  .pro img {
+    width: 200px;
+    height: 200px;
+    transition: 0.3s;
+  }
+
+  .pro .cart-icon,
+  .pro .heart-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    opacity: 0;
+    transition: 0.3s;
+  }
+
+  .pro:hover img {
+    opacity: 0.7;
+  }
+
+  .pro:hover .cart-icon,
+  .pro:hover .heart-icon {
+    opacity: 1;
+  }
+      </style>
+</head>
+<body>
+      <div class="pro">
+        <img src="products/f2.jpg" alt="">
+        <div class="des">
+          <span>A&#768;SA&#768;KE&#769; X adidas</span>
+          <h5>Colored Sport Wear 2-piece</h5>
+          <div class="star">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>$78</h3>
+        </div>
+        <a href="#"><i class="fas fa-cart-plus"></i></a>
+        <a></a><i class="fa-regular fa-heart"></i></a>
+      </div>
+</body>   
+      <script>
+        var img = document.querySelector('.pro img');
+        img.addEventListener('mouseover', function() {
+          img.src = 'products/f1-2.jpg';
+        });
+      
+        img.addEventListener('mouseout', function() {
+          img.src = 'products/f1.jpg';
+        });
+
+        var pro = document.querySelector('.pro');
+        var cartIcon = pro.querySelector('.cart-icon');
+        var heartIcon = pro.querySelector('.heart-icon');
+
+        pro.addEventListener('mouseover', function() {
+            cartIcon.style.display = 'block';
+            heartIcon.style.display = 'block';
+        });
+
+        pro.addEventListener('mouseout', function() {
+            cartIcon.style.display = 'none';
+            heartIcon.style.display = 'none';
+        });
+    </script>
+
+</html>
